@@ -1,0 +1,24 @@
+# Create .gitignore file
+cat > .gitignore << EOL
+# Build output
+dist/
+build/
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Editor files
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS specific
+.DS_Store
+Thumbs.db
+EOL
