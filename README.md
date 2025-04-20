@@ -39,14 +39,20 @@ cd google-search-mcp-server
 npm install
 
 # Set up your environment variables
+# Setup .env file in the root folder of the project
+
 # On macOS/Linux
-cp .env.example .env
+touch .env
 
 # On Windows
-copy .env.example .env
+new-item .env
 
 # Edit .env file to add your Google API credentials
 # Use any text editor you prefer (VS Code, Notepad, nano, vim, etc.)
+# Add these to your newly created .env
+
+GOOGLE_API_KEY=your_api_key_here
+GOOGLE_CSE_ID=your_search_engine_id_here
 
 # Build the server
 npm run build
@@ -146,7 +152,8 @@ Ensure your `package.json` includes:
     "dist"
   ],
   "scripts": {
-    "build": "tsc && chmod 755 dist/index.js",
+    "build": "tsc",
+    "build:unix": "tsc && chmod 755 dist/index.js",
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "start": "node dist/index.js"
