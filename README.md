@@ -2,6 +2,10 @@
 
 A Model Context Protocol (MCP) server that provides web and image search capabilities through Google's Custom Search API. This server follows the MCP specification to integrate with Claude and other AI assistants.
 
+<a href="https://glama.ai/mcp/servers/@hunter-arton/google_search_mcp_server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@hunter-arton/google_search_mcp_server/badge" alt="Google Search Server MCP server" />
+</a>
+
 ## What We're Building
 
 Many AI assistants don't have up-to-date information or the ability to search the web. This MCP server solves that problem by providing two tools:
